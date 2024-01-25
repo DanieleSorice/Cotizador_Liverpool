@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo1.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.scappino.com/media/magestore/storepickup/images/tag/l/i/liver_test.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        /* Resto de los estilos permanecen igual */
+
+        #pide-online {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 50px 20px;
+        }
+
+        /* Añadimos un poco de espacio entre el formulario y la tabla */
+        #pide-online form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Encabezado omitido para evitar duplicación de código -->
+    </header>
+
+    <section id="hero">
+        <!-- Contenido del héroe omitido para evitar duplicación de código -->
+    </section>
+
+    <section id="pide-online">
+        <div>
+            <form action="../../form-result.php" method="post" target="_blank">
+                <p>
+                    Nombre o id del producto: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required>
+                    <input type="submit" value="Buscar">
+                </p>
+            </form>
+            <h2>
+                <img src="https://www.scappino.com/media/magestore/storepickup/images/tag/l/i/liver_test.jpg" alt="BC" id="logo" height="40px" width="40px">  
+                Cotizador Liverpool
+            </h2>
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bolsa</td>
+                            <td>$2990</td>
+                            <td><img src="url_de_la_imagen" alt="Imagen del producto" height="50px" width="50px"></td>
+                        </tr>
+                        <!-- Puedes agregar más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
