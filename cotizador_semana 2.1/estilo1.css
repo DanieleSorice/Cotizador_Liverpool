@@ -1,0 +1,144 @@
+    body{
+       
+        font-family: sans-serif;
+        margin:0cm;
+     
+    }
+
+    header{
+        display: flex;
+        height:70px;
+        background-color: deeppink;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header a {
+        color: rgb(250, 248, 248);
+        text-decoration: none;
+        padding: 0% 200px;
+        font-weight: bold;
+      }
+      
+
+    .logo{
+        display: flex;
+        align-items: center;
+        color: white;
+
+    }
+
+    .logo img{
+        height: 70px;
+        margin-right: 600px;
+    }
+    
+    #promo {
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    #promo img{
+        height: 65vh;
+        justify-content: center;
+        margin: 5%;
+        
+    }
+
+
+   h2{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    height: 10vh;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 3, 3);
+   }    
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#promo2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#promo2 img{
+    height: 18vh;
+    justify-content: center;
+    margin: 4%;
+    
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    height: 4vh;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 3, 3);
+}
+button img{
+    background-color:deeppink;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(https://91b6be3bd2294a24b7b5-da4c182123f5956a3d22aa43eb816232.ssl.cf1.rackcdn.com/contentItem-4335419-28779912-1kbfyndu9y8xd-or.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 70px;
+    
+}
+
+.galeria img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width:950px){
+    #galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#galeria img{
+    display: block;
+    width: 80%;
+    height: 80%;
+}
+
+img{
+    cursor: pointer;
+}
+button{
+background-color: deeppink;
+}
